@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python3
-#pip3 install meross-iot
+# Credit to Meross-IoT see https://github.com/albertogeniola/MerossIot
+# Install pip 
+# pip3 install meross-iot
+# Tested on Windwos 10 and linux (see bottom of script)
 
 import asyncio
 from time import sleep
@@ -8,11 +11,11 @@ from time import sleep
 from meross_iot.http_api import MerossHttpClient
 from meross_iot.manager import MerossManager
 
-device_type = 'mss710'                 # define Meross device used
-device_name = '3D printer upper light'
+device_type = 'mss710'                      # Meross device used
+device_name = '3D printer upper light'      # Meross device name
 
-EMAIL = "strangecalling@gmail.com"
-PASSWORD = "MerossAML47"
+EMAIL = "email"                                 # Account log in
+PASSWORD = "Password"
 
 async def main():
     http_api_client = await MerossHttpClient.async_from_user_password(email=EMAIL, password=PASSWORD)
@@ -42,7 +45,7 @@ async def main():
 
 if __name__ == '__main__':
     # On Windows + Python 3.8, you should uncomment the following
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())    #  Comment out when used on Linux
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
     loop.close()

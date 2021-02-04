@@ -4,7 +4,8 @@ Two simple scripts that can be used on Windows or linux.
 
 # Credit to Meross-IoT see 
 https://github.com/albertogeniola/MerossIot
-meross-iot need to be install via pip
+
+# meross-iot need to be install via pip
 
 to install pip download get-pip.py from
 

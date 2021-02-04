@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python3
+# Credit to Meross-IoT see https://github.com/albertogeniola/MerossIot
 # install pip if not installed
 # pip3 install meross-iot
 # This is tested on Windows 10, Linux see bottom of script

@@ -4,9 +4,6 @@
 # pip3 install meross-iot  
 
 import asyncio
-#import sys
-#import os
-#import time
 from time import sleep
 
 from meross_iot.http_api import MerossHttpClient
@@ -17,8 +14,8 @@ from meross_iot.manager import MerossManager
 device_type = 'mss710' # define Meross device used
 device_name = '3D printer upper light'
 
-EMAIL = "strangecalling@gmail.com"
-PASSWORD = "MerossAML47"
+EMAIL = "email"              # Meross account log in
+PASSWORD = "Password"
 
 async def main():
     http_api_client = await MerossHttpClient.async_from_user_password(email=EMAIL, password=PASSWORD)
@@ -27,7 +24,6 @@ async def main():
     await manager.async_device_discovery()
     plugs = manager.find_devices(device_type=device_type)
     sleep(2)
-
     if len(plugs) < 1:
         print("No {device_type} plugs found...")
     else:

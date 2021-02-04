@@ -2,6 +2,7 @@
 Use python to switch Meross smart device on and off.
 Two simple scripts that can be used on Windows or linux.
 Developed for raspberry pi running Octopi and transferred to windows for desktop control.
+Tested with Thonny on windows, meross-iot installed through package manager.
 
 # Credit to Meross-IoT see 
 https://github.com/albertogeniola/MerossIot

@@ -1,3 +1,3 @@
-python3 "OneDrive\Documents\Raspberry pi\Octopi\meross\Upperlighton.py"
+python3 "Path_to\Upperlighton.py"
 
 timeout /T 15 /NOBREAK

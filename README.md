@@ -24,4 +24,4 @@ Install meross-iot
 Version list can be checked at
 https://pypi.org/project/meross-iot/
 
-
+pip3 install meross_iot
